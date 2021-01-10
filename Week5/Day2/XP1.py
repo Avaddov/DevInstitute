@@ -69,10 +69,12 @@ class Dog():
         else: 
             print(f'{other_dog.name} won the fight')
             
-
+    def  __str__(self):
+        return self.name 
 # Create 3 dogs and use some of your methods
 
 dog1 = Dog("Buddy", 5, 25)
+print(dog1)
 dog2 = Dog("Snoopy", 8, 15)
 dog3 = Dog("Diablo", 4, 2) #He's a chihuahua... he's screwed. 
 
@@ -107,13 +109,13 @@ class Dog():
 # Create a class named PetDog that inherits from Dog.
 class PetDog(Dog):
     def __init__(self, name, age, weight):
-Dog.__init__(self, name, age, weight):
-    self.name = name
-    self.age = age
-    self.weight = weight
+    
+        self.name = name
+        self.age = age
+        self.weight = weight
 
 # Add the attribute trained (boolean) to the PetDog class, should always start False
-bool trained = false
+#bool trained = false
 # Add the following methods:
 
 # train: prints the output of bark and switches the trained boolean to True
