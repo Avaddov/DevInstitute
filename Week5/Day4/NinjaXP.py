@@ -19,6 +19,23 @@ import random
 # 6, 6, 6, 6: You discard the 6 and sum 6 + 6 + 6 = 18, which you assign to charisma.
 #3. Create a class Character and a class Game for this exercise
 #Roll for initiative, suckkas! -Borderlands reference
+
+class Game():
+    def __init__(self):
+        # self.player_count = player_count
+        self.player_characters=[]
+        player_count = int(input("How many players?\n"))
+        for i in range(player_count):
+            self.player_characters.append(Character())
+    
+    def print_text(self):
+        for player_character in self.player_characters:
+            print(player_character)
+
+
+
+
+
 def stat_roll():
     stat = []
     for i in range(4):
@@ -35,8 +52,15 @@ def stat_roll():
 
 
 class Character():
-    def __init__(self, name):
-        self.name = name 
+    def __init__(self, name=None, age=None):
+        if name==None:
+            self.name = input("Please name your Character\n")
+        else:
+            self.name=name    
+        if age==None:
+            self.age = int(input(f"How old is {self.name}?\n"))
+        else:
+            self.age=age                
         self.strength = stat_roll()
         self.dexterity = stat_roll()
         self.constitution = stat_roll()
@@ -45,20 +69,35 @@ class Character():
         self.charisma = stat_roll()
 
     def __str__(self):
-        return f'name: {self.name}\nstr: {self.strength}\ndex: {self.dexterity}\nconst: {self.constitution}\nintel: {self.intelligence}\nwisdom: {self.wisdom}\ncharm: {self.charisma}'
+        return f'''name: {self.name}
+age: {self.age}
+str: {self.strength}
+dex: {self.dexterity}
+const: {self.constitution}
+intel: {self.intelligence}
+wisdom: {self.wisdom}
+charm: {self.charisma}'''
 
 
 
 
-character1 = Character("Bjorn")
-print(character1)
+# character1 = Character("Bjorn")
+# print(character1)
 
-character2 = Character("Aerith")
-print(character2)
+# character2 = Character("Aerith", 27)
+# print(character2)
 
+# character3 = Character()
+# print(character3)
+
+
+
+game = Game()
+game.print_text()
 #4. The point of this exercise is to generate characters for players looking to start a game quickly
 # Start by asking the user how many players are playing
 # Each user then creates his/her character, let them establish what the characters name and age are
+
 # Output the characters created into the following formats:
 # txt: a nicely formatted text file for the players to use
 # json: a json file of all the characters and attributes
