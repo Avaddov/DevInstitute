@@ -49,6 +49,7 @@ section {
   padding: 1.5rem 1rem 2.5rem;
   background-color: white;
   color: #333333;
+  border-radius: 5%;
 
 }
 
@@ -69,6 +70,7 @@ section {
     padding: 2.5rem 1rem 1.5rem;
     color: white;
     text-align: center;
+    
 }
 
 .review .info h3, 
@@ -80,14 +82,16 @@ section {
 .review1 {
   background-color: indianred;
  align-self: flex-start;
+ border-radius: 3%;
 }
 
 .review2 {
   background-color: slateblue;
   align-self: flex-end;
+  border-radius: 3%;
 }
 
 .review3 {
   background-color: teal;
-
+  border-radius: 3%;
 }
