@@ -19,8 +19,8 @@ body {
     
 }
 
-.icons {
-    display: flex;
-    justify-content: space-around;
-    size: 150%;
+i {
+
+    height: 250px;
+    width: auto;
 }
