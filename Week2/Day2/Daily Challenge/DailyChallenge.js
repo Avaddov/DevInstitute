@@ -7,7 +7,7 @@ let wordsArr = str1.split(" "); // this splits the string at the spaces and puts
 console.log(wordsArr);
 // If the ‘bad’ follows the “not”, then it should replace the whole “not”…”bad” substring with ‘good’ then console.log the result.
 let notIdx = wordsArr.indexOf("not"); //this locates the index of the word "not"
-let badIdx = wordsArr.indexOf("bad"); ////this locates the index of the word "bad"
+let badIdx = wordsArr.indexOf("bad"); //this locates the index of the word "bad"
 let wordsBetweenCount = badIdx - notIdx;
 console.log(wordsBetweenCount);
 // If it doesn’t find “not” and “bad” in the right sequence (or at all), just console.log the original sentence.
@@ -16,6 +16,7 @@ if (notIdx < badIdx) {
   wordsArr.splice(notIdx, wordsBetweenCount + 1, "good");
   //Starts at index of not, then counts the words between not and bad(inclusive) and replaces them with "good"
 
+  //merge back into string
   console.log(wordsArr.join(" "));
 } else {
   console.log(str1);
