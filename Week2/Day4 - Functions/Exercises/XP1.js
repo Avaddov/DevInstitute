@@ -26,90 +26,97 @@
 // Exercise 3: Find The Multiples Of 23
 // Write a js function that console.log the multiples of 23 less than 500 and at the end return the sum of all of them.
 
-let arrayNumber = [
-  0,
-  23,
-  46,
-  69,
-  92,
-  115,
-  138,
-  161,
-  184,
-  207,
-  230,
-  253,
-  276,
-  299,
-  322,
-  345,
-  368,
-  391,
-  414,
-  437,
-  460,
-  483,
-];
-// Sum: 5313;
-function multiples() {
-  //create an array to hold numbers
-  let arrayNumber = [];
-  //loop through a range of numbers from 0 to 500
-  for (let number = 0; number <= 500; number++) {
-    //We check if the number is divisible by 23
-    //if the number is divible by 23
-    if (number % 23 == 0) {
-      //push the number into the array from before (arrayNumber)
-      arrayNumber.push(number);
-      //if the number is not divisible by 23
-    } else {
-      //skip this number
-      continue;
-    }
-  }
-  //makes the array accessible outside
-  return arrayNumber;
-}
+// let arrayNumber = [
+//   0,
+//   23,
+//   46,
+//   69,
+//   92,
+//   115,
+//   138,
+//   161,
+//   184,
+//   207,
+//   230,
+//   253,
+//   276,
+//   299,
+//   322,
+//   345,
+//   368,
+//   391,
+//   414,
+//   437,
+//   460,
+//   483,
+// ];
+// // Sum: 5313;
+// function multiples() {
+//   //create an array to hold numbers
+//   let arrayNumber = [];
+//   //loop through a range of numbers from 0 to 500
+//   for (let number = 0; number <= 500; number++) {
+//     //We check if the number is divisible by 23
+//     //if the number is divible by 23
+//     if (number % 23 == 0) {
+//       //push the number into the array from before (arrayNumber)
+//       arrayNumber.push(number);
+//       //if the number is not divisible by 23
+//     } else {
+//       //skip this number
+//       continue;
+//     }
+//   }
+//   //makes the array accessible outside
+//   return arrayNumber;
+// }
 
-multiples();
+// multiples();
 
-//Display the sum
-function sumNumbers() {
-  let listNumbers = multiples();
-  let sum = 0;
-  for (let i = 0; i < listNumbers.length; i++) {
-    sum += listNumbers[i];
-  }
-  console.log(`The sum is ${sum}`);
-}
-sumNumbers();
+// //Display the sum
+// function sumNumbers() {
+//   let listNumbers = multiples();
+//   let sum = 0;
+//   for (let i = 0; i < listNumbers.length; i++) {
+//     sum += listNumbers[i];
+//   }
+//   console.log(`The sum is ${sum}`);
+// }
+// sumNumbers();
 
-OR;
+// OR;
 
-function multiples() {
-  const max_value = 500;
-  let max_lenght = max_value / 23;
-  console.log(max_lenght);
-  let elements = 0;
-  let sum = 0;
-  for (let i = 0; i < max_lenght; i++) {
-    elements += 23;
-    console.log(`Element ${i} is: ${elements}`);
-    sum += elements;
-  }
-  console.log(`My sum is: ${sum}`);
-}
+// function multiples() {
+//   const max_value = 500;
+//   let max_lenght = max_value / 23;
+//   console.log(max_lenght);
+//   let elements = 0;
+//   let sum = 0;
+//   for (let i = 0; i < max_lenght; i++) {
+//     elements += 23;
+//     console.log(`Element ${i} is: ${elements}`);
+//     sum += elements;
+//   }
+//   console.log(`My sum is: ${sum}`);
+// }
 
-multiples();
+// multiples();
 
 // Exercise 4 : Amazon Shopping
-// let amazonBasket = {
-//     glasses: 1,
-//     books: 2,
-//     floss: 100
-// }
+let amazonBasket = {
+  glasses: 1,
+  books: 2,
+  floss: 100,
+};
 // Create a function called checkBasket().
-// It should:
-// ask the user for the item he wants
-// and let him know if it’s in the basket or not
-// Hint: Use the in keyword inside the conditional
+function checkBasket() {
+  // It should:
+  // ask the user for the item he wants
+  let itemRequest = glasses; //prompt("What item do you want?")
+  // and let him know if it’s in the basket or not
+  // Hint: Use the in keyword inside the conditional
+  if (itemRequest in amazonBasket)
+    console.log(
+      `You already have ${Object.amazonBasket} + ${amazonBasket} in your cart`
+    );
+}
