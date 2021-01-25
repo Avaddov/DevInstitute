@@ -19,9 +19,28 @@
 // Instead of using prompt to ask the user for his age, make the checkDriverAge() function accept an argument age,
 //so that if you enter: checkDriverAge(92); it alerts “You are old enough to drive, Powering On. Enjoy the ride!”
 
-// Exercise 2 : What’s In My Wallet ?
+//Exercise 2 
+
 // Given a total due and an array representing the amount of change in your pocket, determine whether or not you are able to pay for the item.
 // Change will always be represented in the following order: quarters, dimes, nickels, pennies.
+
+// let myWallet = {
+//   Quarters: 0.25,
+//   Dimes: 0.10,
+//   Nickels: 0.05,
+//   Pennies: 0.01
+// }
+// function change([quarter, dime, nickel, penny], pay) {
+//   let total = quarter*myWallet.Quarters + dime*myWallet.Dimes + nickel*myWallet.Nickels + penny*myWallet.Pennies;
+//   if (pay <= total) {
+//       return "true"
+//   } else {
+//       return "false"
+//   }
+// }
+
+// let enough = change([25, 20, 5, 0], 4.25);
+// console.log(enough);
 
 // Exercise 3: Find The Multiples Of 23
 // Write a js function that console.log the multiples of 23 less than 500 and at the end return the sum of all of them.
@@ -102,7 +121,7 @@
 
 // multiples();
 
-// Exercise 4 : Amazon Shopping
+// // Exercise 4 : Amazon Shopping
 let amazonBasket = {
   glasses: 1,
   books: 2,
@@ -112,11 +131,10 @@ let amazonBasket = {
 function checkBasket() {
   // It should:
   // ask the user for the item he wants
-  let itemRequest = glasses; //prompt("What item do you want?")
+  let itemRequest = glasses //prompt("What item do you want?")
   // and let him know if it’s in the basket or not
   // Hint: Use the in keyword inside the conditional
-  if (itemRequest in amazonBasket)
-    console.log(
-      `You already have ${Object.amazonBasket} + ${amazonBasket} in your cart`
-    );
+  if (itemRequest in amazonBasket){
+    console.log(`You already have ${Object.amazonBasket} + ${amazonBasket} in your cart`);
+}
 }
