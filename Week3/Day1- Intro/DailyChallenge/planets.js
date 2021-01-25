@@ -31,6 +31,9 @@ let colors = [
   "blue",
   "pink",
 ];
+
+
+let moons=[0, 0, 1, 2, 79, 82, 27, 14];
 // 2. For each planet, in the array, create a div using createElement. This div should have a class named ‘planet’.
 for (i = 0; i < planets.length; i++) {
   let newDiv = document.createElement("div");  //create a new div element called planet
@@ -44,14 +47,14 @@ for (i = 0; i < planets.length; i++) {
   document.body.appendChild(newDiv);
   console.log(newDiv);
   
-//   let ml=120 
-//   if (moons[i]!=0) {
-//      for (let h=0; h<moons[i]; h++){
-//          ml+=50;
-//          let divMoon=document.createElement('div'); 
-//          divMoon.classList.add('moon');
-//          divMoon.style.marginLeft=ml + 'px';
-//           newDiv.appendChild(divMoon);
-//      }
-// }
+  let ml=120 
+  if (moons[i]!=0) {
+     for (let h=0; h<moons[i]; h++){
+         ml+=50;
+         let divMoon=document.createElement('div'); 
+         divMoon.classList.add('moon');
+         divMoon.style.marginLeft=ml + 'px';
+          newDiv.appendChild(divMoon);
+     }
+}
 }
