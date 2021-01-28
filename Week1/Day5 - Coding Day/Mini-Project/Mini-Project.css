@@ -1,0 +1,10 @@
+.nav-link{
+	display: inline;
+}
+.nav-link:hover{
+	background-color: black;
+    color: white;
+}    
+.nav-item{
+    color: white;
+}

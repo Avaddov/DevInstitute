@@ -1,0 +1,90 @@
+
+body{
+    background-color:rgba(185, 222, 233, 0.966);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+nav button{
+    height: 30px;
+    width: 80px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.landscape {
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    position: relative;
+  }
+  .landscape::after {
+    content: "";
+    background: url("oceanbackground.jpg");
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+form{
+    background: url("oceanbackground.jpg");
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.headline{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    color: white
+}
+ 
+form p{
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+form input{
+    height: 2em;
+    }
+    form input.email{
+width: 350px;
+    }
+    form input.button{
+        width: 75px;
+    }
+    .container{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+
+    }
+    .salepoint{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+.fas{
+    color: blue;
+    font-size: 50px;
+}
+.far{
+    color: blue;
+    font-size: 50px;
+}
