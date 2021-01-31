@@ -1,7 +1,7 @@
 // STEP 1) create Sidebar clear button & divs (21)
 // access container & sidebar div
 // let sidebar = document.getElementById('sidebar') 
-​
+​ 
 ​
 let sidebar = document.getElementById('sidebar')
 //console.log(sidebar);
