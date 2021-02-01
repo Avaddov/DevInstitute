@@ -79,12 +79,12 @@
 # Exercise 6 :
 # Make a list of the numbers from one to one million, and then use min() and max() to make sure your list actually starts at one and ends at one million. 
 # Also, use the sum() function to see how quickly Python can add a million numbers .
-numbers = []
-for i in range(1000000):
-    numbers.append(i+1)
-print(min(numbers)==1)
-print(max(numbers)==1000000)
-print(sum(numbers))
+# numbers = []
+# for i in range(1000000):
+#     numbers.append(i+1)
+# print(min(numbers)==1)
+# print(max(numbers)==1000000)
+# print(sum(numbers))
 # Exercise 7 :
 # Write a program which accepts a sequence of comma-separated numbers from the console and generate a list and a tuple which contains every number.
 # Suppose the following input is supplied to the program: 34,67,55,33,12,98
