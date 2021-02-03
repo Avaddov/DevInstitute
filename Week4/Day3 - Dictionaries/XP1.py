@@ -1,7 +1,7 @@
 ## Convert the two following lists, into dictionaries.
 # keys = ['Ten', 'Twenty', 'Thirty']
 # values = [10, 20, 30]
-## Hint: Use the zip method
+# # Hint: Use the zip method
 # results = zip(keys, values)
 # print(dict(results))
 
@@ -34,3 +34,51 @@ print(total)
 # Bonus: let the user input the names and ages instead of using the provided family variable 
 # (Hint: ask the user for names and ages and add them into a family dictionary that is initially empty)
 
+
+
+# name: Zara 
+# creation_date: 1975 
+# creator_name: Amancio Ortega Gaona 
+# type_of_clothes: men, women, children, home 
+# international_competitors: Gap, H&M, Benetton 
+# number_stores: 7000 
+# major_color: France -> blue, Spain -> red, US -> pink, green 
+
+brand = { 
+    'name': 'Zara',
+    'creation_date': 1975, 
+    'creator_name': 'Amancio Ortega Gaona '
+    'type_of_clothes': ['men', 'women', 'children', 'home'],
+    'international_competitors': ['Gap', 'H&M', 'Benetton'],
+    'number_stores': 7000 
+    'major_color': {
+        'France':'blue', 
+        'Spain':'red',
+        'US' : ['pink', 'green']
+        }
+
+}
+
+
+# Change the number of stores to 2.
+brand['number_stores'] = 2
+
+# Print a sentence that explains who the clients of Zara are.
+print('Our customers are:', '',''.join(brand['type_of_clothes'][:3])),
+
+# Add a key called country_creation with a value of Spain to brand
+brand["country_creation"] = 'Spain'
+
+if brand.get('international_competitors') in brand:
+    brand["international_competitors"].append('Desingual')
+else:
+    brand['international_competitors'] = ['Desingual']
+
+
+
+
+users = [ "Mickey", "Minnie", "Donald","Ariel","Pluto"] 
+
+for name in users:
+    if "i" in name and name[0] in ['M', 'P']:
+        print(name)

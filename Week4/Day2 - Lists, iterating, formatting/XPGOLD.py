@@ -17,9 +17,9 @@
 # Exercise 2: Greatest Number
 # Take three numbers from the user and print the greatest number.
 
-# num1 = input("pick a number")
-# num2 = input("pick another number")
-# num3 = input("pick one more number")
+# num1 = input("pick a number\n")
+# num2 = input("pick another number\n")
+# num3 = input("pick one more number\n")
 
 # if (num1 >= num2) and (num1 >= num3):
 #    largest = num1
@@ -76,15 +76,20 @@
 #     else:
 #         print(f"the letter {letter} appears in the word {word} at index {index}")
 
-# Exercise 6 :
-# Make a list of the numbers from one to one million, and then use min() and max() to make sure your list actually starts at one and ends at one million. 
-# Also, use the sum() function to see how quickly Python can add a million numbers .
+# # Exercise 6 :
+# # Make a list of the numbers from one to one million, and then use min() and max() to make sure your list actually starts at one and ends at one million. 
+# # Also, use the sum() function to see how quickly Python can add a million numbers .
 # numbers = []
 # for i in range(1000000):
 #     numbers.append(i+1)
 # print(min(numbers)==1)
 # print(max(numbers)==1000000)
 # print(sum(numbers))
+
+
+
+
+
 # Exercise 7 :
 # Write a program which accepts a sequence of comma-separated numbers from the console and generate a list and a tuple which contains every number.
 # Suppose the following input is supplied to the program: 34,67,55,33,12,98
