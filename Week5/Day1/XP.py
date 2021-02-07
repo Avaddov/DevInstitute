@@ -1,35 +1,35 @@
 # Exercise 1: Cats
 # Consider this class
 
-# def oldestcat(cat_list):
-#     eldestcat_age = 0
-#     eldestcat_name = 0
-#     for cat in cat_list:
-#         if cat.age > eldestcat_age:
-#             eldestcat_name = cat.name
-#             eldestcat_age = cat.age
-#     print(f"The oldest cat is {eldestcat_name}, and is {eldestcat_age} years old.")
+def oldestcat(cat_list):
+    eldestcat_age = 0
+    eldestcat_name = 0
+    for cat in cat_list:
+        if cat.age > eldestcat_age:
+            eldestcat_name = cat.name
+            eldestcat_age = cat.age
+    print(f"The oldest cat is {eldestcat_name}, and is {eldestcat_age} years old.")
 
 
-# class Cat:
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
+class Cat:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-# cat1 = Cat("Bob", 5)
-# #print(cat1.name)
-# # Instantiate 3 Cat objects using our class
-# cat2 = Cat("Fluffy", 8)
-# #print(cat2.name)
+cat1 = Cat("Bob", 5)
+#print(cat1.name)
+# Instantiate 3 Cat objects using our class
+cat2 = Cat("Fluffy", 8)
+#print(cat2.name)
 
-# cat3 = Cat("Mr. Bitey", 7)
-# #print(cat3.name)
-# my_cats = [cat1, cat2, cat3]
-# oldestcat(my_cats)
-# # Create a function that finds the oldest cat and returns the cat
-# # for cat in my_cats:
-# #     print(cat.name)
-# # Print out: “The oldest cat is , and is years old.” using the method previously created
+cat3 = Cat("Mr. Bitey", 7)
+#print(cat3.name)
+my_cats = [cat1, cat2, cat3]
+oldestcat(my_cats)
+# Create a function that finds the oldest cat and returns the cat
+# for cat in my_cats:
+#     print(cat.name)
+# Print out: “The oldest cat is , and is years old.” using the method previously created
 
 # # Exercise 2 : Dogs
 # # Create a class Dog.
