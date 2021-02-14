@@ -47,10 +47,10 @@ print(total)
 brand = { 
     'name': 'Zara',
     'creation_date': 1975, 
-    'creator_name': 'Amancio Ortega Gaona '
-    'type_of_clothes': ['men', 'women', 'children', 'home'],
+    'creator_name': 'Amancio Ortega Gaona',
+    'type_of_clothes': ['men', ' women', ' children', ' home'],
     'international_competitors': ['Gap', 'H&M', 'Benetton'],
-    'number_stores': 7000 
+    'number_stores': 7000,
     'major_color': {
         'France':'blue', 
         'Spain':'red',
@@ -69,7 +69,7 @@ print('Our customers are:', '',''.join(brand['type_of_clothes'][:3])),
 # Add a key called country_creation with a value of Spain to brand
 brand["country_creation"] = 'Spain'
 
-if brand.get('international_competitors') in brand:
+if 'international_competitors' in brand:
     brand["international_competitors"].append('Desingual')
 else:
     brand['international_competitors'] = ['Desingual']
